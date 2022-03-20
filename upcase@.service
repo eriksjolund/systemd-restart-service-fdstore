@@ -1,0 +1,16 @@
+[Unit]
+Description=upcase service with FDSTORE=1 and socket activation for %I
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+FileDescriptorStoreMax=30
+Restart=on-failure
+TimeoutStopSec=70
+
+ExecStart=/tmp/server
+Type=notify
+NotifyAccess=all
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,8 @@
+[Unit]
+Description=upcase service socket for %I
+
+[Socket]
+ListenStream=%h/upcase-sock.%i
+
+[Install]
+WantedBy=default.target
