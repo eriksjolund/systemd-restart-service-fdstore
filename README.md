@@ -20,7 +20,7 @@ Systemctl --user start upcase@demo.socket
 
 
 ```
-$ socat  readline tcp4:127.0.0.1:3010
+$ socat readline tcp4:127.0.0.1:3010
 aaaaa
 AAAAA
 bbb
