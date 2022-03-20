@@ -2,6 +2,10 @@
 
 Example systemd user service that uses FDSTORE=1
 
+Status:
+Running on the host works (upcase@demo.service).
+Running in a container with Podman fails (upcase-podman@demo.service).
+See https://github.com/eriksjolund/systemd-restart-service-fdstore/issues/1.
 
 # Installation
 
