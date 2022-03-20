@@ -8,7 +8,7 @@ Example systemd user service that uses FDSTORE=1
 ```
 git clone URL
 cd systemd-restart-service-fdstore
-gcc -o /tmp/server stream_server_restart.c -l systemd
+gcc -o /tmp/server server_fdstore.c -l systemd
 mkdir -p ~/.config/systemd/user
 cp upcase@.service ~/.config/systemd/user
 cp upcase@.socket  ~/.config/systemd/user
