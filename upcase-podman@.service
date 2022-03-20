@@ -15,7 +15,7 @@ ExecStart=/usr/bin/podman --log-level=debug run \
   --cidfile=%t/%n.ctr-id \
   --cgroups=no-conmon \
   --rm \
-  --sdnotify=conmon \
+  --sdnotify=container \
   --replace \
   --name upcase-%i \
   --detach \
